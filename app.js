@@ -12,7 +12,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: '*',
+    'Access-Control-Allow-Origin': '*',
     methods: ["POST"],
     credentials: false,
   })
