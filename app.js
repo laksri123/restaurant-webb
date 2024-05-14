@@ -12,7 +12,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: [process.env.FRONTED_URL],
+   " Access-Control-Allow-Origin": '*',
     methods: ["POST"],
     credentials: true,
   })
