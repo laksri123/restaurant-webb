@@ -14,7 +14,7 @@ dotenv.config();
 
 app.use(
   cors({  
-    origin:" https://stunning-selkie-6c7352.netlify.app" ,
+    origin:[" https://stunning-selkie-6c7352.netlify.app", "http://localhost:5173"] ,
     methods: ["POST"],
     credentials: true,
   })
