@@ -11,7 +11,11 @@ const app = express();
 dotenv.config();
 
 app.use(
-  cors()
+  cors({
+    origin: [process.env.BASE_URL],
+    methods: ["POST"],
+    credentials: true,
+  })
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
