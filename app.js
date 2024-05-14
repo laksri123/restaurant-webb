@@ -11,11 +11,7 @@ const app = express();
 dotenv.config();
 
 app.use(
-  cors({
-  " Access-Control-Allow-Origin": '*',
-    methods: ["POST"],
-    credentials: true,
-  })
+  cors()
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
