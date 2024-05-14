@@ -10,8 +10,11 @@ const app = express();
 // dotenv.config({ path: "./config.env" });
 dotenv.config();
 
+
+
 app.use(
   cors({
+    
     origin: [process.env.FRONTED_URL],
     methods: ["POST"],
     credentials: true,
